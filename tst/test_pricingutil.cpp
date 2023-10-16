@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "pricingutil.h"
 
 TEST(sampleTest, sample) {
     EXPECT_EQ(4, 4);
@@ -26,7 +27,7 @@ TEST(PricingUtilTest, zeroConstant) {
 
 TEST(PricingUtilTest, negInterest) {
     PricingUtil pu;
-    EXPECT_EQ(-0.8, pu.calcVal(-1.0, -0.1, 1.0));
+    EXPECT_EQ(-0.8f, pu.calcVal(-1.0, -0.1, 1.0));
 }
 
 TEST(PricingUtilTest, getVal) {
@@ -34,6 +35,6 @@ TEST(PricingUtilTest, getVal) {
     EXPECT_EQ(0, pu.getVal());
     float calculated = pu.calcVal(-1.0, -0.1, 1.0);
     EXPECT_EQ(calculated, pu.getVal());
-    EXPECT_EQ(calculated, -0.8);
+    EXPECT_EQ(calculated, -0.8f);
 
 }
