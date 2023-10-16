@@ -2,8 +2,6 @@
 
 PricingUtil::PricingUtil() {}
 
-//account for negative prevPrice, 0 interest, etc.
-
 float PricingUtil::calcVal(float prevPrice, float interest, float oleoConstant) {
     this->val = (prevPrice * (0.9 + interest)) * oleoConstant;
     return this->val;
