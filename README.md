@@ -29,9 +29,17 @@ win the competition, and submit proof that you won in your PR. Good Luck!
 Please include the following when you are writing your PR:   
 General things:   
 1. What is the purpose of this PR?
+Finished Part 2 of the challenge
+
 2. What changes did you make? Why?
+wrote hackathonbot.ccp from scratch, 
+
 3. What bugs did you find while testing?
+Yea, one of the tests seem off? hackathonbot.takeAction(188); should not yield holding. 
 
 This PR Specific:
 1. What code did the exchange give you after you won?
+I did not see a code??
+
 2. What challenges did you face?
+Not much. Had to look up how to use a queue in c++.

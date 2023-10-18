@@ -4,6 +4,7 @@
 
 Action::Action(bool initHold) : initialBalance(0.0), holding(true) {
     this->holding=initHold;
+    this->balance=0.0;
 }
 
 // Method to buy a specific quantity at a specific price
