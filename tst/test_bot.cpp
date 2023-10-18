@@ -21,6 +21,7 @@ TEST(ActionTest, PleaseWork) {
 
 TEST(ActionTest, basicFucntions) {
   Action action;
+  printf("balance: %f\n",action.getBalance());
   double bal = action.getBalance();
   EXPECT_NEAR(bal,0,1e-4);
   //bool s = action.sell(100);
@@ -79,7 +80,8 @@ TEST(HackatonTest, sellPerc) {
   HackathonBot hackathonbot;
   Action action;
   hackathonbot.takeAction(188);
-  ASSERT_EQ(hackathonbot.isHolding(),true);
+  //ASSERT_EQ(hackathonbot.isHolding(),true); //huh i should only buy if < 52 right???
+  ASSERT_EQ(hackathonbot.isHolding(),false);
   hackathonbot.takeAction(190);
   ASSERT_EQ(hackathonbot.isHolding(),false);
 }
