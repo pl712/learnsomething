@@ -11,3 +11,4 @@ def max_area(height):
             max_area = max(max_area, current_area)
 
     return max_area
+
