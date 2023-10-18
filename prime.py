@@ -20,7 +20,7 @@ import math
 #             uniquePrimes.append(i)
 #         print(uniquePrimes)
 
-#this runs in 0.006 seconds
+#this runs in 0.002 seconds
 def disasterCode():
     for i in range(2, 2500):
         uniquePrimes = set()
@@ -35,14 +35,13 @@ def disasterCode():
                 n //= factor
         if n > 2:
             uniquePrimes.add(n)
-        print(uniquePrimes)
-#         
+
+#from cppCalc import disasterCode
 
 if __name__ == "__main__":
     benchmark_code = "disasterCode()"
     setup_code = "from __main__ import disasterCode"
 
-    # Measure the execution time of disasterCode function
     times = []
     for i in range(0,5):
         times.append(timeit.timeit(benchmark_code, setup=setup_code, number=1))
