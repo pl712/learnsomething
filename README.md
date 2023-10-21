@@ -11,9 +11,14 @@ if your manager determines the performance is too lacking, you will be asked to 
 Please include the following when you are writing your PR:   
 General things:   
 1. What is the purpose of this PR?
+complete last level
 2. What changes did you make? Why?
+compiled the system.
 
 This PR Specific:
 1. How did you design your system?
+basically used dict to store and retrive data. seems very basic
 2. What did you struggle with?
+n/a
 3. Is there anything you would change about this step?
+instructios seem vague?
