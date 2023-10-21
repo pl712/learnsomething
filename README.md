@@ -26,11 +26,27 @@ Please include the following when you are writing your PR:
 General things:
 
 1. What is the purpose of this PR?
+
+Submit Pt2 Update
+
 2. What changes did you make? Why?
+
+Wrote the cpp source files for pricing calculation
+
 3. What bugs did you find while testing?
+
+N/A
 
 This PR Specific:
 
 1. What challenges did you face while writing the module from scratch?
+
+N/A. Took a few minutes to get used to headers
+
 2. How did you ensure your unit tests are comprehensive?
+
+Thought of a lot of edge cases, and tested them.
+
 3. Did you have enough guidance to complete the task?
+
+Generally, yes.

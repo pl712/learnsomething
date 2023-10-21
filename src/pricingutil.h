@@ -11,6 +11,8 @@ class PricingUtil {
     PricingUtil();
     float calcVal(float prevPrice, float interest, float oleoConstant);
     float getVal();
+  private:
+    float val;
 };
 
 
